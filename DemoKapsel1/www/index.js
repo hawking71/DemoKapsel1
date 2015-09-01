@@ -19,6 +19,7 @@ var devapp = {
     //Cordova Device Ready
     //========================================================================
      onDeviceReady: function () {
+         //this is a comment, just to test git commit
          startApp();
          //devapp.smpInfo.server = "hcpms-i063065trial.hanatrial.ondemand.com";
          //devapp.smpInfo.port = 443;
