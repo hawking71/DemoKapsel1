@@ -1,0 +1,4 @@
+/*!
+ * Copyright (c) 2009-2014 SAP SE, All Rights Reserved
+ */
+jQuery.sap.declare("sap.ushell.ui.shell.ActionButton");jQuery.sap.require("sap.ushell.library");jQuery.sap.require("sap.m.Button");sap.m.Button.extend("sap.ushell.ui.shell.ActionButton",{metadata:{library:"sap.ushell"}});(function(){"use strict";jQuery.sap.declare("sap.ushell.ui.shell.ActionButton");sap.ushell.ui.shell.ActionButton.prototype.init=function(){this.addStyleClass("sapUshellRoundedActionButton");if(sap.m.Button.prototype.init){sap.m.Button.prototype.init.apply(this,arguments);}};sap.ushell.ui.shell.ActionButton.prototype.exit=function(){sap.m.Button.prototype.exit.apply(this,arguments);};sap.ushell.ui.shell.ActionButton.prototype.setVisible=function(s){var j=jQuery("#"+this.sId),v=s?"visible":"hidden";if(j.length){this.setProperty("visible",s,true);j.css("visibility",v);}else{this.setProperty("visible",s,false);}};}());

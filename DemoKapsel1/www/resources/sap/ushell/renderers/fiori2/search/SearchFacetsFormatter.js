@@ -1,0 +1,1 @@
+(function(){"use strict";jQuery.sap.declare('sap.ushell.renderers.fiori2.search.SearchFacetsFormatter');var m=sap.ushell.renderers.fiori2.search.SearchFacetsFormatter=function(){this.init.apply(this,arguments);};m.prototype={init:function(){},_afterGetAllDataSourcesPrepareFacets:function(a){},_afterSearchPrepareFacets:function(r){}};})();

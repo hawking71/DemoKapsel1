@@ -1,0 +1,2604 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2015 SAP SE. All rights reserved
+ */
+
+@import "../base/library.less";
+@import "../../../../../Base/baseLib/sap_bluecrystal/base.less"; /* ORIGINAL IMPORT PATH: "../../../../sap/ui/core/themes/sap_bluecrystal/base.less" */
+
+@import "../../../../sap/ui/core/themes/sap_bluecrystal/global.less";
+
+/* START "AboutDialog.css" */
+.sapUshellAboutDialogHeader {
+	color: @sapUiBrand
+}
+/* END "AboutDialog.css" */
+
+/* START "ActionMode.css" */
+/* SAP_BLUECRYSTAL */
+
+/* =================================================================== */
+/* CSS for the activation button and cover DIV of tile in action mode  */
+/* =================================================================== */
+
+.sapUshellDashboardView {
+  .tileActionLayerDiv {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px;
+  }
+  .tileActionLayerDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 2px;
+  }
+}
+
+.sapUshellRoundedActionButton .sapMBtnInner{
+    border: 1px solid @sapUiInvertedElement;
+    text-shadow: 0 0px 0 #ffffff;
+
+.sapMBtnIcon {
+    color: @sapUiInvertedElement;
+    background-color: @sapUiFooterBG;
+    box-shadow: 0 0 1.875rem 0.125rem fade(@sapUiDarkShadowTint, 15%);
+
+    .Active {
+        background-color: @sapUiHighlight;
+    }
+  }
+
+  .sapMBtnIcon:hover{
+     background-color:rgba(78,85,89,0.96);
+  }
+  .sapMBtnIcon:active{
+      background-color: @sapUiHighlight;
+  }
+}
+
+.sapUshellRoundedActionButton:focus > .sapMBtnInner.sapMFocusable {
+    border: 1px dotted @sapUiInvertedElement;
+    background: transparent;
+}
+
+.sapUshellRoundedActionButton.Active {
+  .sapMBtnIcon {
+      background-color: @sapUiHighlight;
+
+  }
+  .sapMBtnIcon:hover{
+      background-color:@sapUiHighlight;
+  }
+  .sapMBtnIcon:active{
+      background-color: #006ca7;
+  }
+}
+
+.sapUshellRoundedActionButton .sapMBtnInner:active {
+    background-color: @sapUiInvertedElement;
+    border-color: @sapUiInvertedElement;
+}
+
+.sapUshellRoundedActionButton .sapMBtnInner:focus {
+    border: 1px dotted white;
+}
+
+/* END "ActionMode.css" */
+
+/* START "AddBookmarkButton.css" */
+
+/* ============================================= */
+/* CSS for control sap.ushell/AddBookmarkButton.control */
+/* ============================================= */
+
+	@sapUshellDisabledButtonColor: lighten(@sapUiBaseText,66.3%);
+
+.sapMActionSheetPopover.sapMPopover .sapMActionSheet button.sapMActionSheetButton.sapUshellAddBookmarkButton.sapMBtnDisabled{
+	color : @sapUshellDisabledButtonColor;
+}
+
+.sapMActionSheetPopover.sapMPopover button.sapUshellAddBookmarkButton.sapMBtnDisabled .sapUiIcon{
+	color : @sapUshellDisabledButtonColor;
+}
+
+/* END "AddBookmarkButton.css" */
+
+/* START "ApplicationContainer.css" */
+/* Copyright (c) 2009-2014 SAP SE, All Rights Reserved */
+/*
+ * This is the stylesheet for the "blue crystal" theme.
+ *
+ * Note: "sapUShell..." should be the common prefix of our style classes!
+ */
+.sapUShellApplicationContainer {
+  border: none;
+  display: block;
+}
+
+/* END "ApplicationContainer.css" */
+
+/* START "Catalog.css" */
+/* SAP_BLUECRYSTAL */
+
+/* ============================================= */
+/* CSS for control sap.ushell/Catalog */
+/* ============================================= */
+
+.catalogNewGroupBackButton{
+	background-color: transparent;
+}
+/* END "Catalog.css" */
+
+/* START "ContactSupport.css" */
+
+#technicalInfoBox{
+	max-height: 150px;
+	overflow-y: auto;
+	margin: 15px;
+	border: 1px solid @sapUiInputBaseBorder;
+	width: auto;
+}
+
+.ushellContactSupportHeaderInfoText{
+	color: @sapUiLightText;
+	font-size: 0.895rem;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+}
+
+/* For #technicalInfoBox */
+.ushellContactSupportFixWidth{
+ @media screen and (orientation:portrait) {
+      max-width:221px;
+ }
+}
+
+/* END "ContactSupport.css" */
+
+/* START "EndUserFeedback.css" */
+
+.ratingLabelFeedbackNegativeText{
+	color: @sapUiNegativeElement;
+}
+
+.ratingLabelFeedbackPositiveText{
+	color: @sapUiPositiveElement;
+}
+
+.ratingLabelFeedbackCriticalText{
+	color: @sapUiCriticalElement;
+}
+
+.ratingLabelFeedbackNeutralText{
+    color: @sapUiNeutralElement;
+}
+
+#sapFeedbackAppIcon{
+    color: @sapUiBrand
+}
+
+#feedbackTechnicalInfoBox{
+    border-color: @sapUiInputBaseBorder;
+}
+
+#PopoverTitle{
+    color:@sapUiLightText;
+}
+
+#ratingLabel{
+    color:@sapUiStandardText;
+}
+
+#technicalDataLink{
+    color: @sapUiLink;
+}
+/* END "EndUserFeedback.css" */
+
+/* START "GroupList.css" */
+/* ============================================= */
+/* CSS for controller sap.ushell/GroupList.controller */
+/* ============================================= */
+/* LESS Variables */
+/* ============================================= */
+	//[Tags "Color"]
+	// [Description "Background color on hover for item in left panel"]
+	@sapUshellListItemHoverBackgroundColor: #e2ecf3;
+	/* Default Group Item*/
+	//[Tags "Color"]
+	// [Description "Background color for item in left panel"]
+	@sapUshellGroupListItemBackgroundColor: @sapUiExtraLightBG;
+/* Open Catalog Button*/
+	@ushellOpenCatalogButtonBackgroundColor: @sapUiButtonEmphasizedBackground;
+	@sapUshellDefaultGroupListItemHoverBackgroundColor: @sapUshellListItemHoverBackgroundColor;
+	@ushellOpenCatalogFontColor: @sapUiTextInverted;
+	@ushellOpenCatalogIconColor: @sapUiTextInverted;
+	@ushellOpenCatalogButtonBorder: 4px solid @sapUiLightestBorder;
+	@ushellOpenCatalogFontSize: @sapUiFontHeader3Size;
+/* List Item*/
+	@ushellListItemBackgroundColor: @sapUshellGroupListItemBackgroundColor;
+	@ushellListItemBorderBottom: 1px solid @sapUiLightBorder;
+/* Add Tile Button*/
+	@ushellAddTileButtonColor: fade(@sapUiBaseText,25);
+	@ushellAddTileButtonFontSize: 1.8em;
+	@ushellAddTileButtonFontColorHover: fade(@sapUiBaseText,50);
+/* Group list*/
+	@ushellGroupListBackgroundColor: @sapUshellGroupListItemBackgroundColor;
+	@ushellGroupListBorder: 1px solid @sapUiMediumBorder;
+	@ushellGroupListFontFamily: @sapUiFontHeaderFamily;
+	@ushellGroupListFontSize: @sapMFontHeader6Size;
+	@ushellGroupListFontWeight: @sapUiFontHeaderWeight;
+	@ushellGroupListColor: @sapUiHeaderText;
+
+/* Styles */
+/* ============================================= */
+
+.sapUshellGroupList{
+	background-color: @ushellGroupListBackgroundColor;
+}
+.sapUshellGroupItemList{
+	background-color: @sapUiExtraLightBG;
+}
+.sapUshellAddTilesContainer {
+	font-size: @ushellAddTileButtonFontSize;
+	color: @ushellAddTileButtonColor;
+}
+.sapUshellAddTilesContainer:hover {
+	color: @ushellAddTileButtonFontColorHover;
+}
+
+.sapUshellGroupListItem.sapMLIB {
+	background-color: @ushellListItemBackgroundColor;
+	border-bottom: @ushellListItemBorderBottom;
+}
+.sapUshellGroupListItem .sapMSLITitleOnly {
+	color: @ushellGroupListColor;
+	font-size: @ushellGroupListFontSize;
+	font-family: @ushellGroupListFontFamily;
+	font-weight: @ushellGroupListFontWeight;
+}
+.sapUshellDefaultGroupItem.sapMLIB {
+	background-color: @sapUshellGroupListItemBackgroundColor;
+	border-bottom: @ushellListItemBorderBottom;
+}
+.sapUshellDefaultGroupItem .sapMSLITitleOnly {
+	color: @ushellGroupListColor;
+	font-size: @ushellGroupListFontSize;
+	font-family: @ushellGroupListFontFamily;
+	font-weight: @ushellGroupListFontWeight;
+}
+.sapUshellGroupListItem.sapUshellOver {
+    background-color: @sapUshellListItemHoverBackgroundColor;
+}
+.sapUshellGroupListItem.sapUshellSelected {
+    background-color: @sapUshellListItemHoverBackgroundColor;
+}
+.sapUshellDefaultGroupItem.sapUshellOver {
+  background-color: @sapUshellListItemHoverBackgroundColor;
+}
+.sapUshellDefaultGroupItem.sapUshellSelected {
+  background-color: @sapUshellListItemHoverBackgroundColor;
+}
+
+.sapUshellDefaultGroupItem:active,
+.sapUshellGroupListItem:active {
+    @media @query-desktop { background-color: @sapUshellListItemHoverBackgroundColor; }
+}
+
+.sap-desktop .sapUshellDefaultGroupItem:hover,
+.sap-desktop .sapUshellGroupListItem:hover {
+    background-color: @sapUshellListItemHoverBackgroundColor;
+}
+
+.sapUshellGroupListItem-clone {
+   background-color: @sapUshellListItemHoverBackgroundColor !important;
+   border-color: @sapUshellListItemHoverBackgroundColor !important;
+}
+/* END "GroupList.css" */
+
+/* START "HeaderTile.css" */
+/* ============================================= */
+/* CSS for control sap.ushell/HeaderTile.control */
+/* ============================================= */
+
+.sapUshellHeaderTile{
+	font-family: @sapUiFontHeaderFamily;  
+    font-weight: @sapUiFontHeaderWeight;
+
+	h1& {
+	   font-size: @sapMFontHeader1Size; 
+	}
+
+    h2& {
+       font-size: @sapMFontHeader2Size; 
+    }
+
+    h3& {
+       font-size: @sapMFontHeader3Size; 
+    }
+
+    h4& {
+       font-size: @sapMFontHeader4Size; 
+    }
+
+    h5& {
+       font-size: @sapMFontHeader5Size; 
+    }
+
+    h6& {
+       font-size: @sapMFontHeader6Size; 
+    }
+}
+/* END "HeaderTile.css" */
+
+/* START "HistoryScreen.css" */
+/* Copyright (c) 2009-2014 SAP SE, All Rights Reserved */
+
+
+#searchHistoryScreen, #searchContainerHistoryScreen, .sapMHistoryScreen {
+    .sapUshellHistoryScreenRecentSearches {
+        .sapMListUl {
+            border-bottom: 1px solid @sapUiExtraLightBorder;
+            border-top: none;
+            .sapMSLITitleOnly {
+                color: @sapUiLink;
+            }
+        }
+    }
+}
+
+/* END "HistoryScreen.css" */
+
+/* START "LoadingDialog.css" */
+/* ================================================================*/
+/* CSS for control sap.ushell/LoadingDialog.control  sap_bluecrystal theme */
+/* =============================================================== */
+@loadingDialogBackgroundColor: @sapShell_Background;
+
+/* popup directly following sapUshellLoadingDialog */
+.sapUshellLoadingDialog{
+    background-color: @loadingDialogBackgroundColor !important;
+/* standard for older browsers that do not support :not meta-selector */
+.opacity(0.9) !important;
+.transition(opacity 1s ease-in-out);
+}
+
+.sapUshellLoadingDialogControl {
+    color: @sapUiLightText !important;
+    border: 0 !important;
+    background: transparent;
+.opacity(1.0) !important;
+.transition(opacity 0.25s ease-in-out);
+
+.sapUshellLoadingDialogAppData {
+
+.opacity(1.0) !important;
+}
+
+&.sapUshellLoadingDialogAppDataInvisible {
+.opacity(0.0) !important;
+}
+
+.sapUiIcon {
+    font-size: 40px;
+    color: @sapUiLightText;
+}
+
+.sapUshellLoadingDialogLabel {
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+}
+
+.sapUshellLoadingDialog.sapUshellLoadingDialogInvisible{
+.opacity(0.0) !important;
+}
+
+.sapUshellLoadingDialog:not(.sapUshellLoadingDialogInvisible){
+.opacity(0.9) !important;
+}
+
+/* Phone */
+@media @query-phone {
+    .sapUshellLoadingDialog {
+    .sapUiIcon {
+        font-size: 30px !important;
+    }
+
+    .sapUshellLoadingDialogLabel {
+        font-size: 1.3em;
+    }
+}
+    /* loading screen should not be transparent on phones, as it is critically performance-wise*/
+    .sapUshellLoadingDialog:not(.sapUshellLoadingDialogInvisible)~div.sapMDialogBLyInit {
+    .opacity(1.0) !important;
+}
+
+.sapUshellLoadingDialog:not(.sapUshellLoadingDialogInvisible)~.sapMDialogBLyInit {
+.opacity(1.0) !important;
+}
+}
+/* END "LoadingDialog.css" */
+
+/* START "NavTree.css" */
+
+/* ============================================= */
+/* CSS for NavTree */
+/* ============================================= */
+
+/* LESS Variables */
+/* ============================================= */
+
+/* General Colors */
+@sapUshellNavTreeSelectedBG:					@sapUiHighlight;
+@sapUshellNavTreeSelectedTextColor:				@sapUiHeaderText;
+
+@sapUshellNavTreeMenuBG:                        @ushellListItemBackgroundColor;
+@sapUshellNavTreeChildBG:                       @sapUiExtraLightBG;
+@sapUshellNavTreeParentBG:                      @ushellListItemBackgroundColor;
+@sapUshellNavTreeHoverBG:                       @sapUshellListItemHoverBackgroundColor;
+/* Default Navigation Tree selected and Hover background color*/
+//[Tags "Color"]
+// [Description "Navigation Tree selected and hover Background color"]
+@sapUshellNavTreeHoverSelected:                 #006CA7;
+
+/* Styles */
+/* ============================================= */
+
+
+.sapUshellNavTreeListItem {
+    text-decoration: none !important;
+    font-size: 0.875rem;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+
+    &.sapUshellNavTreeChild{
+        background-color:                   @sapUshellNavTreeChildBG;
+
+        .sapUshellNavTreeLink{
+            color: @sapUiLightText;
+        }
+    }
+
+    &.sapUshellNavTreeParent{
+        background-color:                   @sapUshellNavTreeParentBG;
+
+        .sapUshellNavTreeLink{
+            color: @sapUiLightText;
+        }
+    }
+
+    &.sapUshellNavTreeSingle{
+        background-color:                   @sapUshellNavTreeMenuBG;
+
+        .sapUshellNavTreeLink{
+            color: @sapUiLightText;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+.sapUshellNavTreeLink {
+    text-decoration: none !important;
+    color: @sapUiLightText;
+    font-size: 0.875rem;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+}
+
+.sapUshellNavTreeListItem.sapUshellNavTreeItemSelected {
+    background-color: @sapUshellNavTreeSelectedBG;
+
+    .sapUshellNavTreeLink {
+        color:  @sapUshellNavTreeSelectedTextColor;
+    }
+}
+
+.sapUshellNavTreeListItem.sapUshellNavTreeItemSelected:hover {
+    background-color: @sapUshellNavTreeHoverSelected;
+
+        .sapUshellNavTreeLink {
+            color:  @sapUiLightText;
+        }
+}
+
+.sapUshellNavTreeListItem:hover {
+    background-color: @sapUshellNavTreeHoverBG !important;
+}
+
+
+/* END "NavTree.css" */
+
+/* START "Panel.css" */
+/* SAP_BLUECRYSTAL */
+
+/* ============================================= */
+/* CSS for control sap.ushell/Panel.control */
+/* ============================================= */
+
+/* LESS Variables */
+/* ============================================= */
+
+/* Menu bar*/
+	@ushellCatalogMenuBarBackground: 					transparent;
+	@ushellCatalogMenuBarBoxShadow: 					none;
+	
+/* Selector (drop down box / category selection in catalog) */
+	@ushellCatalogMenuBarSelectorBackground:			@sapShell_Background;
+	@ushellCatalogMenuBarSelectorBorderColor:			@sapUiDarkBorder;
+	
+/* Search Field */
+	@ushellCatalogMenuBarSearchFieldBackground:			@sapShell_Background;
+	@ushellCatalogMenuBarSearchFieldBorderColor:		@sapUiDarkBorder; /*when not focused*/
+	@sapUiSelectBorderColorPressed:						@sapUiHighlight;
+	
+/* Button */
+	@ushellCatalogMenuBarButtonBackground:			@sapShell_Background;
+	@ushellCatalogMenuBarButtonBorderColor:		@sapUiDarkBorder;
+	
+	
+/* Styles */
+/* ============================================= */
+
+
+.sapUshellPanel {
+	& > header {
+
+		.sapMBar {
+			background: @ushellCatalogMenuBarBackground;
+			box-shadow: @ushellCatalogMenuBarBoxShadow;
+		}
+	}
+}
+/* END "Panel.css" */
+
+/* START "PictureTile.css" */
+.sapCaUiPTDeleteButton .sapUiIcon:before {
+	background-color: @sapUiWhiteBG;
+	border-radius: 2rem;
+	color: @sapUiText;
+}
+
+.sapMBtn.sapCaUiPTDeleteButton.sapMBtnActive {
+	background-color: transparent;
+	border: none;
+}
+
+.sapCaUiPTDeleteButton.sapMBtnActive .sapUiIcon:before {
+	color: @sapUiBtnBGTransparentDown;	
+
+}
+.sapCaUiPTDeleteButton .sapUiIcon{
+	outline: none;
+}
+	
+
+
+/* END "PictureTile.css" */
+
+/* START "PlusTile.css" */
+/* ============================================= */
+/* CSS for control sap.ushell/PlusTile.control */
+/* ============================================= */
+
+/* General Plus Tile */
+@ushellPlusTileBoxColorBackgroundHover:     fade(@sapUiTextInverted,60); /*rgba(255,255,255,0.6);*/
+@ushellPlusTileBoxColorBackground:          fade(@sapUiTextInverted,40); /*rgba(255,255,255,0.4);*/
+
+@ushellPlusTileIconColor:                   @sapUiTextInverted; /*rgb(255, 255, 255, 1)*/
+@ushellPlusTileIconColorHover:              @sapUiTextInverted; /*rgb(255, 255, 255, 1)*/
+
+.sapUshellTile.sapUshellPlusTile {
+
+    background-color:   @ushellPlusTileBoxColorBackground;
+
+    &:hover {
+        background-color: @ushellPlusTileBoxColorBackgroundHover;
+    }
+    
+    &:hover .sapUiIcon {
+        color: @ushellPlusTileIconColorHover;
+    }
+    
+    .sapUiIcon {
+        color:                @ushellPlusTileIconColor;
+    }
+}
+/* END "PlusTile.css" */
+
+/* START "ResultFilterInfo.css" */
+.sapSearchResultFilterInfo span {
+    color: @sapUiLightText;
+}
+.sapSearchResultFilterInfo {
+    position: relative;
+    background: @sapUiActiveBG;
+    border-bottom: 1px solid @sapUiLightBG;
+    top: 0;
+}
+/* END "ResultFilterInfo.css" */
+
+/* START "Search.css" */
+/******** fiori search related css styles ********/
+@searchPhoneSize: ~"(max-width: 767px)";
+@searchTabletSize: ~"(min-width: 768px) and (max-width: 1150px)";
+@hdrEndMin: ~"(max-width: 657px)";
+@searchResultImageInnerWidth: 4rem;
+@searchResultImageInnerWidthPhone: 3rem;
+@searchResultSpacing: 1rem;
+@searchResultSpacingPhone: 0.75rem;
+@searchResultListItemButtonColor: @sapUiMediumBorder;
+@searchResultListItemButtonColorOpen: @sapSelectedColor;
+@searchResultListPreviewBG: mix(@sapUiHighlight, @sapUiWhite, 15%);
+@searchResultListSelectedBG: mix(@sapUiHighlight, @sapUiWhite, 5%);
+
+
+
+
+/******** search box ********/
+
+.headSearchDivContainer {text-align: right}
+.headSearchDiv {
+    padding:0;
+    max-width: 38rem;
+}
+html[dir=rtl] .headSearchDivContainer {text-align: left}
+html[dir=rtl] .no-result-text {text-align: right !important}
+
+#sf {width: 2.5rem}
+#sf:before {border-right: 1px solid transparent;}
+#sf span {margin-left: 0; margin-right:0}
+
+#headSearchBox { 
+	height: 2.75rem; 
+	padding: 0 0.5rem 0 0;
+	border: 0;
+
+    .searchSelect { 
+        margin-top:0.125rem; 
+        margin-bottom:0.125rem; 
+        margin-right: 0.25rem;
+        height: 2.125rem;
+        background-color: @sapUiButtonStandardBG;
+	
+        label { 
+	       line-height: 2rem;
+	       color: @sapUiLightText;
+        }
+        &:not(.sapMSltPressed) span { 
+	       line-height: 2rem;
+            background-color: @sapUiButtonStandardBG;
+        }
+    }
+/*
+    .searchSelect:not(.searchSelectMobile){
+        min-width: 18%;
+    }
+*/
+
+    .searchInput { 
+        padding-top:0.125rem; 
+        padding-bottom: 0.125rem;
+        /*width: 60%;*/ 
+        height: 2.125rem; 
+        margin:0 0 0.25rem 0;
+        @media @searchTabletSize{width: 100% !important;}
+        @media @searchPhoneSize {width: 100% !important;}
+        input { 
+            height: 2.125rem; 
+        }
+    }
+    
+    #searchInputShell-placeholder { line-height: 2.125rem; }
+}
+
+#searchInputShell-popup li { 
+	background-color: transparent;
+}
+
+.suggestAppIcon {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+#searchContainerApp {
+    .searchFilterContextualBar {
+        height: 2rem;
+        font-style: italic;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .filterTitle{
+            color: White;
+            margin-left:0;
+            font-size: 0.875rem;
+        }
+        
+        .filterLabel{
+            margin-left:0;
+        }
+    }
+
+    #searchGroupInApp {
+        display: inline-flex;
+        width: 100%;
+        
+        @media @searchPhoneSize {
+            display: block;           
+        }
+        
+        .searchSelect {
+            margin-top: 1rem;
+            padding: 0;
+            margin-right: 0.5rem;
+            margin-left:0;
+            background-color: @sapUiButtonStandardBG;
+            min-width: 10rem;
+            @media @searchTabletSize {
+
+            }
+            @media @searchPhoneSize {
+                display: block;
+            }
+            label {
+                color: @sapUiLightText;
+            }
+            &:not(.sapMSltPressed) span {
+                background-color: @sapUiButtonStandardBG;
+            }
+        }
+        .searchInput {
+            margin-top: 1rem;
+            padding: 0;
+            margin-left: 0rem;
+            min-width: 10rem;
+            width: 70% !important;
+            @media @searchPhoneSize {
+                margin-top: 0.5rem;
+                width: 13rem !important;
+            }
+        }
+        .searchInput.hasNoSelect {
+            margin-left: 3.5rem;
+        }
+        .searchBtn {
+            margin-top: 0.75rem;
+            padding: 0;
+            margin-left: 0.5rem;
+            @media @searchPhoneSize {
+                margin-top: 0.25rem;
+            }
+        }
+    }
+    .sapUshellSearchResultAppsGrowingTriggerBtn {
+        height: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+}
+
+#searchGroupInApp-input-popup li { 
+	background-color: transparent;
+}
+
+
+/******** detail ********/
+/* 
+.searchResultListItemDetail{
+    width: 100%;
+    // margin-top set by script
+
+    @media @searchPhoneSize {
+        display: none !important;
+    }
+
+    .searchResultListItemDetail-content{
+        padding: 1rem 2rem;
+        width: 17rem;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .searchResultListItemDetail-attributes {
+        width: 100%;
+        .searchResultListItemDetail-attribute {
+            width: 100%;
+            margin-bottom: @searchResultSpacing;
+            display: block;
+            font-size: @sapMFontMediumSize;
+
+            .searchResultListItemDetail-attribute-label {
+                line-height: 130%;
+                display: block;
+                max-width: 100%;
+                color: @sapUiLightText;
+                &::after {
+                    content: ":";
+                    margin-right: 0.5em;
+                }
+            }
+            .searchResultListItemDetail-attribute-value {
+                line-height: 130%;
+                max-width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                b {
+                    background-color: @sapUiSearchHighlight;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+ */
+
+
+.appSearchResults{
+    // padding-bottom: 1rem;
+    .sapUshellTileContainer .sapUshellContainerTitle {
+        display: none !important;
+    }
+    table {
+        margin-top: 0.75rem;
+
+        border: none;
+        tbody tr {
+            background-color: transparent !important;
+            height: 3.75rem;
+                td &:not(:first-child) {
+                    margin-left: 1rem;
+                }
+            .sapUshellSearchResultAppItem {
+                background-color: @sapUiLightestBG;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+    b {
+        background-color: @sapUiSearchHighlight;
+        font-weight: bold; 
+    }
+}
+
+
+/****** Resultlist More Footer ****/
+.resultListFooterContainer{
+    border: none;
+    background-color: transparent;
+    cursor:pointer;cursor:hand;
+    width: 100%;
+
+    .resultListFooterContent{
+        display: table;
+        margin: 1rem auto;
+        // text-align: center;
+    }
+
+    .resultListMoreFooter{
+        font-size: 14px;
+        color: @sapUiLink;
+        margin: 0 1rem;
+        cursor:pointer;
+        cursor:hand;
+    }
+
+
+    .resultListBusyFooter{
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+/****** animations ****/
+.animated{
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  -ms-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+.animated.hinge{
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  -ms-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1);
+      -webkit-animation-timing-function: ease-out;}
+    30% { -webkit-transform: scale(1.06); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1);
+      -moz-animation-timing-function: ease-out;}
+    30% { -moz-transform: scale(1.06); }
+    100% { -moz-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1);
+      animation-timing-function: ease-out;}
+    30% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.searchResultListItem {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom:0.063rem;
+    border: 0.0652rem solid @sapUiExtraLightBorder;
+    &:not(:first-child) {
+    }
+    &.searchResultListItem-open {
+        // background-color: @searchResultListSelectedBG;
+        @media @searchPhoneSize {
+        }
+        .searchResultListItemButton {
+            color: @searchResultListItemButtonColorOpen;
+        }
+        .searchResultListItem-main {
+            @media @searchPhoneSize {
+               cursor: pointer;
+            }   		
+        }
+    }
+    &:first-of-type {	
+    }
+
+    .searchResultListItemButton {
+        display: table-cell;
+        background-color: @sapUiLightestBG;
+        @media @searchPhoneSize {
+            display: none;
+        }
+        text-align: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        color: @sapUiDarkBorder;
+        vertical-align: bottom;
+        width: 2.5rem;
+        
+        .searchResultListItemButtonContainer {
+            width: 2.5rem;
+/*             height: 2rem; */
+            height: auto;
+            border-left: 0.063rem solid @sapUiExtraLightBorder;
+        }
+        .searchResultListItemButtonContainer-hidden {
+            visibility:hidden;
+        }
+    }
+
+    .searchResultListItem-main {
+        overflow: hidden;
+        display: table-cell;
+        vertical-align: top;
+        background-color: @sapUiLightestBG;
+        -webkit-user-select: text;
+        @media @searchPhoneSize {
+            padding-bottom: 0.75rem;
+        }
+        > div {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+    }
+    
+    .searchResultListItem-relatedObjectsContainer {
+        display: inline-block;
+        @media @searchPhoneSize {
+            margin: 0.5rem 0.75rem 0 0.75rem;
+        }
+    }
+    .searchResultListItem-relatedObjectsContainer-desktop {
+        display: inline-block;
+        @media @searchPhoneSize {
+            display:none;
+        }
+    }
+    .searchResultListItem-relatedObjectsContainer-phone {
+        display: none;
+        font-size: 0.75rem;
+        @media @searchPhoneSize {
+            display:inline-block;
+        }
+    }
+
+    .searchResultListItem-left {
+/*         padding: @searchResultSpacing @searchResultSpacing 0.75rem @searchResultSpacing; */
+        padding: 0;
+        padding-bottom:@searchResultSpacing;
+        @media @searchPhoneSize {
+            padding: @searchResultSpacingPhone;
+            width: 90%;
+            @width: ~"100% - " 2*@searchResultSpacingPhone;
+            width: calc(@width);
+            width: -webkit-calc(@width);
+            line-height: 120%;
+            cursor: pointer;
+            cursor: hand;
+        }
+        
+        .searchResultListItem-titleContainer {
+            width: 100%;
+            margin: 0;
+            padding: @searchResultSpacing;
+            padding-bottom: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .searchResultListItem-title {
+            display: inline;
+            font-size: @sapMFontHeader4Size;
+            margin-right: 0.625rem;
+            color:@sapUiLink;
+            @media @searchPhoneSize {
+                font-size: @sapMFontHeader5Size;
+                margin-top: 0.125rem;
+                margin-bottom: 0.125rem;
+            }
+            b {
+                background-color: @sapUiSearchHighlight;
+                font-weight: bold; 
+            }
+        }
+        .searchResultListItem-type {
+            display: inline-block;
+            font-size: @sapMFontMediumSize;
+            line-height: 130%;
+            color: @sapUiLightText;
+
+            @media @searchPhoneSize {
+                font-size: @sapMFontSmallSize;
+                cursor: pointer;
+                cursor: hand;
+            }
+            b {
+                background-color: @sapUiSearchHighlight;
+                font-weight: bold; 
+            }            
+        }
+        .searchResultListItem-relatedObjects {
+            color:@sapUiLink;
+            @media @searchPhoneSize {
+            }
+        }
+        .searchResultListItem-relatedObjectsSeparator {
+            margin-left:1rem;
+            margin-right:1rem;
+        }
+        .searchResultListItem-attributes {
+            clear: both;
+            margin-top: 0.375rem;
+            .searchResultListItem-visibleAttributes {
+                margin: @searchResultSpacing;
+                margin-bottom: 0;
+            }
+            .searchResultListItem-detailsAttributes {
+                margin: 0 @searchResultSpacing;
+            }
+            .searchResultListItem-whyFoundContainer {
+                margin: 0 @searchResultSpacing;
+                margin-top: 1.25rem - 0.125rem - 0.25rem;
+            }
+            .searchResultListItem-attribute {
+                width: 25%;
+                display: inline-block;
+                margin-top: 0.125rem;
+                vertical-align: top;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                &:not(:last-of-type) {
+                    padding-right: 1rem;
+                }
+                @media @searchTabletSize {
+                    width: 33.3333333333%;
+                }
+                @media @searchPhoneSize {
+                    float: left;
+                    font-size: @sapMFontSmallSize;
+                    display: block;
+                    width: 100%;
+                    &:not(:last-of-type) {
+                        padding-right: 0;
+                        margin-bottom: 0.125rem;
+                    }
+                }
+                .searchResultListItem-attribute-label {
+                    display: block;
+                    font-size: @sapMFontMediumSize;
+                    max-width: 100%;
+                    line-height: 130%;
+                    margin-bottom: 0.125rem;
+                    color: @sapUiLightText;
+                    &::after {
+                        content: ":";
+                        margin-right: 0.5em;
+                    }
+                    @media @searchPhoneSize {
+                        float: left;
+                        display: inline-block;
+                        font-size: @sapMFontSmallSize;
+
+                        vertical-align: bottom;
+                        margin-bottom: 0rem;
+                        cursor: pointer;
+                        cursor: hand;
+                    }
+                }
+                .searchResultListItem-attribute-value {
+                    max-width: 100%;
+                    line-height: 130%;
+                    display: block;
+                    font-size: @sapMFontMediumSize;
+                    margin-bottom: 0.25rem;
+                    margin-right: 1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    @media @searchPhoneSize {
+                        float: left;
+                        display: inline-block;
+                        font-size: @sapMFontSmallSize;
+
+                        vertical-align: bottom;
+                        margin-bottom: 0rem;
+                        cursor: pointer;
+                        cursor: hand;
+                    }
+                    b {
+                        background-color: @sapUiSearchHighlight;
+                        font-weight: bold; 
+                    }
+                }
+            }
+            .searchResultListItem-relatedObjectsToolbar {
+                background-color:@sapUiButtonStandardBG;
+                position:relative;
+                bottom:-1*@searchResultSpacing;
+                border:none;
+            }
+    
+            .searchResultListItem-imageDesktop-outerContainer {
+                overflow: visible;
+                @media @searchPhoneSize {
+                    display: none;
+                }
+            }
+            .searchResultListItem-imageDesktop-innerContainer {
+              height: 2.75rem - (2 * 0.063rem);
+              position: relative;
+              top: -0.25rem;
+            /*                   overflow: hidden; */
+            }
+            .searchResultListItem-imageDesktop-alignmentHelper {
+                display: inline-block;
+                height: 100%;
+                width:0;
+                vertical-align: middle;
+            }
+            .searchResultListItem-imageDesktop {  // tablet+
+                width: auto;
+                height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                border: 0.063rem solid @sapUiExtraLightBorder;
+            }
+        }
+    }
+    
+    .searchResultListItem-imagePhone {
+        display: none;
+        width: @searchResultImageInnerWidth;
+        height: @searchResultImageInnerWidth;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        @media @searchPhoneSize {
+            display: block;
+            float: right;
+            margin: 0;
+            width: @searchResultImageInnerWidthPhone;
+            height: @searchResultImageInnerWidthPhone;
+        }
+    }
+}
+
+.searchResultListFooter {
+    background-color:transparent !important;
+    border:none !important;
+}
+
+
+
+/***************** OVERALL LAYOUT **************/
+
+@searchLayoutRightWidth: 17rem;
+
+/* For the busy animation */
+.searchContainer{
+    display: inline-block;
+    width: 100%;
+}
+
+.searchBusy {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 31;
+    text-align:center;
+    padding-top: 20%;
+}
+
+.searchBusyBG {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    background-color: white;
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.searchFacets {
+    display:table-cell;
+	vertical-align: top;
+	width: 18rem;
+    min-height: 1356px;
+    background-color: #ffffff;
+    border-right: 1px solid @sapUiLightBorder;
+    background-color: @sapUiLightestBG;
+}
+
+.searchResultListsContainer {
+	display: table-cell;    
+    margin: 0 auto;    
+    padding: 1rem 2rem 0 2rem;
+    @media @searchTabletSize {
+        padding: 1rem 1rem 0 1rem;
+    }
+    @media @searchPhoneSize {
+        padding: 0.25rem;
+    }
+    position: relative;
+
+
+    .no-result {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding: 3rem 1rem 0rem 1rem;
+        box-sizing: border-box;
+        
+        @media @searchPhoneSize {
+            display: inline-block;
+            max-width: 100%;
+        }
+        
+        .no-result-icon {
+            font-size: 10rem;
+            color: #009de0;
+            display: inline-block;
+            float: left;
+            padding-right: 2rem;
+            
+            
+            @media @searchPhoneSize {
+                float: none;
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding-right: 0rem;
+            }
+            
+            span{
+                display: inline-block;
+            }
+        }
+        
+        .no-result-text {
+            text-align: left;
+            display: inline-block;
+            max-width: calc(~"100% - 13rem");
+
+            @media @searchPhoneSize {
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .no-result-info {
+                font-size: @sapMFontHeader4Size;
+                color: @sapUiLightText;
+                word-wrap:break-word;
+                b {
+                    color: #000000;
+                }
+            }
+            
+            .no-result-tips {
+                font-size: @sapMFontSmallSize;
+                margin-top: 2rem;
+                
+                ul{
+                    padding-left: 1rem;
+                    
+                    li {
+                        list-style: disc;
+                        list-style-type: disc;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+ 
+    .searchResultListWithDetail {
+        display: table;
+        width: 100%;
+
+        .searchLayout-left {
+            display: table-cell;
+            vertical-align: top;
+            width: 100%;
+        }
+    }
+    .searchLayout-mainHeader {
+        margin: 1rem 1rem 0.25rem 1rem;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .searchLayout-mainHeaderName {
+            font-size: @sapMFontHeader4Size;
+            color: @sapUiHeaderText;
+            text-shadow: #ffffff 0.0063rem 0;
+            float: left;
+        }
+        .searchLayout-mainHeaderCount {
+            font-size: @sapMFontHeader4Size;
+            margin-left: 0.5em;
+            color: @sapUiHeaderText;
+            text-shadow: #ffffff 0.0063rem 0;
+            float: left;
+        }
+    }
+    .searchLayout-bucket {
+        margin: 1.7rem 1rem 0.5rem 1rem;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .searchLayout-bucketName {
+            font-size: @sapMFontMediumSize;
+            color: @sapUiHeaderText;
+            text-shadow: #ffffff 0.0063rem 0;
+            float: left;
+            text-transform: uppercase;
+        }
+        .searchLayout-bucketCount {
+            font-size: @sapMFontMediumSize;
+            margin-left: 0.5em;
+            color: @sapUiHeaderText;
+            text-shadow: #ffffff 0.0063rem 0;
+            float: left;
+        }
+        &:first-child {
+            margin-top: 1rem;
+        }
+    }
+    .searchLayout-mainHeader + .searchLayout-bucket {
+        margin-top: 1.5rem;
+    }
+}
+
+
+.searchResultListWithDetail *:focus {
+/* 
+    outline: 1px dotted #005483;
+    outline-offset: -1px;
+ */
+    outline: 0px none transparent;
+}
+
+.searchResultListItemButton:focus {
+/*     outline: @sapUiFocus; */
+    outline: 1px dotted #005483;
+    outline-offset: -1px;
+}
+
+
+.sapUshellSubContainer>div{
+	width: 100%;
+}
+
+.sapUshellSearchHistoryScreen{
+
+    .searchLayout .searchLayout-bucket{
+        margin: 0;
+
+        height: 2rem;
+        background-color: mix(@sapUiHighlight, @sapUiWhite, 5%);
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+
+        font-family: @sapUiFontHeaderFamily; 
+        font-size: @sapMFontHeader6Size; 
+        font-weight: @sapUiFontHeaderWeight; 
+        color: @sapUiLightText; 
+        text-transform: uppercase;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .searchLayout-bucketName{
+        padding-top: .5rem;
+        padding-left: 1rem;
+    }
+    
+
+}
+
+.sapUshellShellOvrlySearch>div {
+    height: 100%;
+}
+
+/******** pill in search input box ********/
+
+input.sapUshellShellSearchBox[type="search"]{
+    /*width:18rem;*/
+    width: ~'calc(100% - 12rem)';
+    border-width:0;
+    border-radius:0;
+    padding-left:0;
+    float: left;
+    height:100%;
+
+    @media @searchPhoneSize {
+        width: ~'calc(100% - 2rem)';
+    }
+
+}
+
+input.sapUshellShellSearchBox[type="search"]:focus{
+    border-width:0;
+    border-radius:0;
+    box-shadow:0 0 0 0;
+}
+
+// .sapUshellDataSourceListPill:hover{
+//     background-color:@sapUiHighlight;
+// }
+
+
+.sapUshellDataSourceList{
+    margin: 0.3rem 0.2rem;
+    // border-top: 1px solid #e5e5e5;
+    // border-bottom: 1px solid #e5e5e5;
+    background-color:white;
+
+    .sapUshellDataSourcePill.sapUshellDataSourceListPill{
+        margin: 0.5rem;
+    }
+}
+
+.sapUshellDataSourcePill{
+    background-color:@sapUiAccent5;
+    border-radius:0.125rem;
+    padding-left:0.4rem;
+    padding-right:0.4rem;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    margin-right:0.5rem;
+    
+    color: white;
+    font-size:0.8rem;
+    vertical-align: middle;
+
+    &.sapUshellDataSourceListPill{
+        cursor: pointer;
+        display: inline-block;
+        margin: 0.7rem;
+        &:hover {
+            background-color:@sapUiHighlight;
+        }
+    }
+
+    &.sapUshellSearchBoxPill{
+        cursor: default;
+        margin-top: .4rem;
+        float: left;
+        height: 1.2rem;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        @media @searchPhoneSize {
+            display: none !important;
+        }
+    }
+
+
+}
+
+.sapUshellShellSearchBoxPillDel:before{
+    margin-top:10px;
+    font-family:SAP-icons;
+    content:"\e1c7";
+    font-weight:normal;
+    margin-left:10px;
+    vertical-align: bottom;
+}
+
+
+.sapUshellDataSourceBadge.sapUshellDataSourceBadgeMorePrio{
+    display: none;
+    @media @searchPhoneSize {
+        display: block;
+        color: white;
+        background-color:@sapUiAccent5;
+        padding: .5rem .5rem .5rem 1rem;
+        font-style: italic;
+    }
+
+}
+
+// .sapUshellShellSearchBoxPillDel:hover::before{
+//     font-weight:bold;
+// }
+
+#searchContainerApp{
+	height:100%;
+}
+
+.searchTabStrips .sapMITBContainerContent{
+    display:none;
+}
+
+.searchLayout{
+    display:table;
+    width:100%;
+    table-layout: fixed;
+}
+/* END "Search.css" */
+
+/* START "SearchFacet.css" */
+.searchFacet hr {
+    border: none;
+    height: 0.0625rem;
+    /* Set the hr color */
+    color: @sapUiLightBorder; /* old IE */
+    background-color: @sapUiLightBorder; /* Modern Browsers */
+}
+
+.searchFacet li:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.searchFacet .sapMLIBCounter {
+    color: @sapUiLightText;
+}
+
+.searchFacet .sapMListHdr {
+    background-color: @sapUiLightestBG;
+    border-bottom: none;
+}
+
+.searchFacet .sapMGHLI {
+    color: @sapUiDarkText !important;
+    border-bottom: none !important;
+}
+/* END "SearchFacet.css" */
+
+/* START "SearchFacetDialog.css" */
+.searchFacetDialogContainer {
+    height: 600px;
+    width: 1000px;
+}
+.searchFacetDialogMasterContainer {
+    max-height: 600px;
+}
+.searchFacetShowMoreButton {    
+    float: right;
+    margin-right: 10px;
+}
+/* END "SearchFacetDialog.css" */
+
+/* START "searchField.css" */
+.sapUshellSearchBox{
+    height: 100%;
+}
+.sapUshellSearchBox input{
+    /*padding: 0 1rem 0 0;*/
+    color: @sapUiDarkestBG;
+    line-height: 1.5rem !important;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.sapUshellSearchBox form,
+.sapUshellContainerSearchBox form{
+    background-color: white;
+    border: 1px solid @sapUiDarkBorder;
+    padding-left: .5rem;
+    border-radius: 2px;
+}
+
+.sapUshellContainerSearchBox form{
+    max-width: 42rem;
+    margin-top: 0.5rem;
+    left: 50%;
+}
+
+.sapUshellShellSearch .sapUshellSearchBox.sapMSF  .sapMSFF .sapMSFPlaceholder, .sapUshellShellOvrlySearch .sapUshellSearchBox.sapMSF  .sapMSFF .sapMSFPlaceholder{
+	top: 0px;
+}
+
+.sapUshellSearchBox.sapMFocus form,
+.sapUshellContainerSearchBox.sapMFocus form{
+    border: 1px solid @sapUiHighlight;
+}
+
+.sapUshellSearchBox .sapUshellShellSearchBoxPillDsName,
+.sapUshellContainerSearchBox .sapUshellShellSearchBoxPillDsName{
+    position: relative;
+    top:0;
+}
+
+.sapUshellSearchBox .sapMSFB.sapMSFS,
+.sapUshellContainerSearchBox .sapMSFB.sapMSFS{
+    display: none;
+}
+
+
+.sapUshellSearchBox .sapMSFB.sapMSFR,
+.sapUshellContainerSearchBox .sapMSFB.sapMSFR{
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.sapUshellSearchBox .sapUshellShellSearchBoxPillDel,
+.sapUshellContainerSearchBox .sapUshellShellSearchBoxPillDel{
+    position: relative;
+    top:0;
+}
+
+.sapUshellSearchBox .sapMSFB,
+.sapUshellContainerSearchBox .sapMSFB{
+    height: 34px;
+    line-height: inherit;
+    border: transparent;
+    padding: 2px;
+    display: block;
+}
+
+.sapUshellSearchBox .sapUshellShellSearchBoxForm .sapMSFPlaceholder{
+	display: inline-block !important;
+	height: 1.5rem !important;
+	padding-top: 0.4rem;
+}
+
+.sapUshellSearchBox .sapMSF .sapMSFF .sapMSFPlaceholder,
+.sapUshellContainerSearchBox .sapMSF .sapMSFF .sapMSFPlaceholder{
+	display: inline-block !important;
+	height: 1.5rem !important;
+    line-height: normal !important;
+}
+
+/*.sapUshellSearchBox.sapMSF .sapMSFB form .sapMSFPlaceholder,
+.sapUshellContainerSearchBox.sapMSF .sapMSFB form .sapMSFPlaceholder{
+    left: 0;
+    top: 9px;
+    display: none; 
+    position: absolute;
+    padding: 0 2rem 0 1rem;
+    color: @sapUiLightText;
+}*/
+
+.sapUshellShellSearch .sapMSFB .sapMSFR:after,
+.sapUshellShellOvrlySearch .sapMSFB .sapMSFR:after,
+#application-Action-search .sapMSFB .sapMSFR:after {
+    color: @sapUiLightText;
+}
+
+.sapUshellShellSearch .sapMSFVal .sapMSFB .sapMSFR:after,
+.sapUshellShellOvrlySearch .sapMSFVal .sapMSFB .sapMSFR:after,
+.sapUshellShellSearch .sapMSFVal .sapMSFB .sapMSFR:after {
+    content: "\e1c7";
+}
+
+.sapUshellShellSearch .sapMSFVal .sapMSFPlaceholder,
+.sapUshellShellOvrlySearch .sapMSFVal .sapMSFPlaceholder
+#application-Action-search .sapMSFVal .sapMSFPlaceholder{
+	display: none !important;
+}
+
+
+
+/* END "searchField.css" */
+
+/* START "SearchFilter.css" */
+/****** Search Filter ****/
+@levelPadding : 16px;
+
+
+
+// .searchFilterItem{
+//    .searchFilterItem{
+//        height : 100px;
+//    }
+//}
+
+
+
+
+.searchFilterListNoData {
+    display: none;
+}
+
+.searchFilterItem{
+    height : 3.12rem;
+    font-size: @sapMFontMediumSize;
+    font-weight: normal;
+    color: @sapUiStandardText;
+    width: 100%;
+    .treeLeft{
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+    }
+    .treeRight{
+        float: right
+    }
+
+
+    &.active {
+        background-color: @sapUiActiveBG;
+    }
+
+    .link {
+        font-family: @sapUiFontFamily;
+        font-size: @sapMFontMediumSize;
+        font-weight: normal;
+        color: @sapUiStandardText;
+        line-height: 3.12rem;
+        // width: 70%;
+        white-space:nowrap;
+        display: block;
+    }
+
+    &.searchFilterItemLevel0 .link{
+        padding-left: @levelPadding;
+    }
+
+    &.searchFilterItemLevel1 .link{
+        padding-left: @levelPadding*2;
+    }
+
+    &.searchFilterItemLevel2 .link{
+        padding-left: @levelPadding*3;
+    }
+    &.searchFilterItemLevel3 .link{
+        padding-left: @levelPadding*4;
+    }
+
+    &.searchFilterItemLevel4 .link{
+        padding-left: @levelPadding*5;
+    }
+
+    &.searchFilterItemLevel5 .link{
+        padding-left: @levelPadding*6;
+    }
+
+    &.searchFilterItemLevel6 .link{
+        padding-left: @levelPadding*7;
+    }
+
+    &.searchFilterItemLevel7 .link{
+        padding-left: @levelPadding*8;
+    }
+
+    &.searchFilterItemLevel8 .link{
+        padding-left: @levelPadding*9;
+    }
+
+    &.searchFilterItemLevel9 .link{
+        padding-left: @levelPadding*10;
+    }
+
+    &.searchFilterItemLevel10 .link{
+        padding-left: @levelPadding*11;
+    }
+
+    &.searchFilterItemLevel11 .link{
+        padding-left: @levelPadding*12;
+    }
+
+    &.searchFilterItemLevel12 .link{
+        padding-left: @levelPadding*13;
+    }
+
+    &.searchFilterItemLevel13 .link{
+        padding-left: @levelPadding*14;
+    }
+
+    &.searchFilterItemLevel14 .link{
+        padding-left: @levelPadding*15;
+    }
+
+    .number {
+        font-family: @sapUiFontFamily;
+        font-size: @sapMFontMediumSize;
+        font-weight: normal;
+        color: @sapUiLightText;
+        line-height: 3.12rem;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        /*position: absolute;*/
+        /*right: 10px;*/
+        color: @sapUiLightText;
+        display: block;
+
+
+        &.hide{
+            display: none;
+        }
+    }
+}
+
+
+/* END "SearchFilter.css" */
+
+/* START "SearchResultAppItem.css" */
+
+/* ============================================= */
+/* CSS for control sap.ushell/SearchResultAppItem.control */
+/* ============================================= */
+
+.sapUshellSearchResultAppItem {
+	border-bottom: none;
+	font-size: @sapMFontHeader4Size;
+}
+
+.sapUshellSearchResultAppItem .sapUiIcon, 
+.sapUshellSearchResultAppItem .sapMBtnContentSpan {
+    color: @sapUiLink;
+}
+/* END "SearchResultAppItem.css" */
+
+/* START "SearchResultApps.css" */
+
+/* ============================================= */
+/* CSS for control sap.ushell/SearchResultApps.control */
+/* ============================================= */
+
+.sapUshellSearchResultAppsGrowingTrigger {
+    border-bottom: none;
+    background-color: transparent !important;
+}
+
+.sapUshellSearchResultAppsGrowingTriggerBtn {
+   font-weight: normal; 
+   color: @sapUiLink;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+/* END "SearchResultApps.css" */
+
+/* START "SearchSuggestionListItem.css" */
+
+/* ============================================= */
+/* CSS for control sap.ushell/SearchSuggestionListItem.control */
+/* ============================================= */
+
+.sapUshellSearchSuggestionListItem {
+    cursor: pointer;
+    background-color: transparent !important;
+}
+.sapUshellSearchSuggestionListItem a {
+    text-decoration: initial !important;
+}
+
+a.sapUshellSearchSuggestionListItemNavItem:focus {
+    outline: none !important;
+    background: @sapUiNeutralBG;
+}
+
+.sapUshellSearchSuggestionListItemGroupFooter span {
+    font-family: @sapUiFontHeaderFamily;  
+	font-size: @sapMFontHeader6Size; 
+	font-weight: @sapUiFontHeaderWeight; 
+	color:@sapUiHeaderText;
+}
+
+.sapUshellSearchSuggestionListItemGroupFooter {
+	border-bottom: none;
+}
+
+.sapUshellSearchSuggestionList .sapMListHdr {
+    background-color: transparent !important;
+}
+
+/*.sap-desktop .sapMLIB:focus {
+
+}
+
+.sapMCLI .suggestList:focus{
+
+}
+*/
+
+//New
+.sapUshellSuggestEnter{
+
+    padding: 1rem;
+    float: right;
+
+}
+
+.suggestIcon{
+
+    float:left;
+    padding: 0 4px 0 4px;
+    white-space: nowrap;
+}
+
+.sapUshellSuggestDataSource{
+    margin: .6rem 0 0.7rem 1rem;
+
+    &.sapUshellSuggestDataSourceRight{
+
+        float:right;
+        // padding: 1rem;
+        white-space: nowrap;
+        margin-top: .8rem;
+        margin-right: 1rem;
+    }
+
+}
+
+.suggestText{
+
+    float:left;
+    /* padding: 1rem; */
+    white-space: nowrap;
+    font-style:normal;
+    font-family: @sapUiFontFamily; 
+    font-size: @sapMFontMediumSize; 
+    font-style: normal; 
+    font-weight: normal; 
+    color: @sapUiStandardText; 
+
+}
+
+
+.sapUshellSuggestHeader{
+    height: 2rem;
+    background-color: mix(@sapUiHighlight, @sapUiWhite, 5%);
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+
+    font-family: @sapUiFontHeaderFamily; 
+    font-size: @sapMFontHeader6Size; 
+    font-weight: @sapUiFontHeaderWeight; 
+    color: @sapUiLightText; 
+    text-transform: uppercase;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* END "SearchSuggestionListItem.css" */
+
+/* START "SearchTileContainer.css" */
+/* ================================================================*/
+/* wrapper for a tile */
+/* ================================================================*/
+.searchTileWrapper {
+    background-color: @sapUiListBG;
+    -moz-box-shadow: 0px 0px 0.125rem rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 0.125rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0.125rem rgba(0, 0, 0, 0.1);
+}
+
+/* ================================================================*/
+/* set focus for tile */
+/* ================================================================*/
+.searchTileWrapper .sapUshellTileBase:focus {
+    outline: 0.0625rem dotted @sapUiFocus;
+    outline-offset: -0.0625rem;
+}
+/* END "SearchTileContainer.css" */
+
+/* START "Shell.css" */
+
+/* END "Shell.css" */
+
+/* START "ShellHeader.css" */
+/* ======================================================== */
+/* CSS for sap.ui.unfied.ShellHeader.control (bluecrystal)  */
+/* ======================================================== */
+
+.sapUshellShellHeadBegin .sapUshellShellHeadItm.sapUshellShellHeadItmSep:after {
+    border-left: 1px solid darken(@sapUiHeaderBG,10);
+}
+
+.sapUshellShellHeadUsrItm:before,
+.sapUshellShellHeadEnd .sapUshellShellHeadItm.sapUshellShellHeadItmSep:before {
+    border-right: 1px solid darken(@sapUiHeaderBG,10);
+}
+
+.sapUiMedia-Std-Desktop .sapUshellShellHeadItm:hover > span,
+.sapUiMedia-Std-Desktop .sapUshellShellHeadUsrItm:hover > * {
+	background-color: @sapUiBtnBGStandardHover;
+}
+
+.sapUiMedia-Std-Desktop .sapUshellShellHeadItm.sapUshellShellHeadItmSel:hover > span {
+	background-color: darken(@sapUiHighlight, 5%);
+}
+
+.sapUshellShellHeadItm > span,
+.sapUshellShellHeadUsrItm {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 1px 0 fade(@sapUiWhite,50);
+	color: @sapUiLightText;
+}
+
+.sapUshellShellHeadItmMarker > div:after {
+	border-bottom-color: mix(@sapUiHighlight, @sapUiWhite, 10); /*#E6F2F9*/
+}
+
+.sapUshellShellHeadItmMarker > div:before {
+	border-bottom-color: @sapUiMediumBG;
+}
+
+.sapUshellShellHeadItm:active > span,
+.sapUshellShellHeadItm.sapUshellShellHeadItmSel > span,
+.sapUshellShellHeadItm:active:hover > span,
+.sapUiMedia-Std-Desktop .sapUshellShellHeadUsrItm:hover:active > *,
+.sapUshellShellHeadUsrItm:active > * {
+	color: @sapUiTextInverted;
+}
+
+.sapUshellShellHeadUsrItm:focus .sapUshellShellHeadUsrItmExp,
+.sapUshellShellHeadUsrItm:focus .sapUshellShellHeadUsrItmName,
+.sapUshellShellHeadUsrItm:focus .sapUshellShellHeadUsrItmImg,
+.sapUshellShellHeadItm:focus > span {
+	border-color: @sapUiFocus;
+}
+
+.sapUshellShellHeadTitle {
+	color: @sapUiLightText;
+}
+/* END "ShellHeader.css" */
+
+/* START "ShellLayout.css" */
+/* ======================================================== */
+/* CSS for sap.ui.unfied.ShellLayout.control (bluecrystal)  */
+/* ======================================================== */
+
+@sapUshellShellCurtainBGStartColor: fade(@sapUiLightestBG,97);
+@sapUshellShellCurtainBGEndColor: fade(lighten(desaturate(@sapUiHighlight,37),56),97);
+@sapUshellShellCurtainBGStartColor_IE: fade(@sapUiLightestBG, 100);
+@sapUshellShellCurtainBGEndColor_IE: fade(lighten(desaturate(@sapUiHighlight,37),56),100); /*#e5f2f9*/
+@sapUshellShellHeadBGStartColor: lighten(@sapUiExtraLightBG,2);
+@sapUshellShellHeadBGEndColor: lighten(@sapUiLightBG,3);
+
+
+._sapUshellShellSubHdr { /* Testpage only */
+	background-color: mix(@sapUiHighlight, @sapUiWhite, 10);
+	color: @sapUiLightText;
+}
+
+.sapUshellShell .sapUshellShellHead {
+	background-color: @sapUiDarkestBG;
+}
+
+.sapUshellShell .sapUshellShellHead > div, .sapUshellShell .sapUshellShellHead .sapUshellShellHeadEnd{
+	background-color: @sapUiExtraLightBG;
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorStr='@{sapUshellShellHeadBGStartColor}', EndColorStr='@{sapUshellShellHeadBGEndColor}',GradientType=0)";
+	background: -ms-linear-gradient(top,@sapUshellShellHeadBGStartColor 0,@sapUiExtraLightBG 33%,@sapUiExtraLightBG 75%,@sapUshellShellHeadBGEndColor 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,@sapUshellShellHeadBGStartColor),color-stop(0.33,@sapUiExtraLightBG),color-stop(0.75,@sapUiExtraLightBG),color-stop(1,@sapUshellShellHeadBGEndColor));
+	background-image: -webkit-linear-gradient(top,@sapUshellShellHeadBGStartColor 0,@sapUiExtraLightBG 33%,@sapUiExtraLightBG 75%,@sapUshellShellHeadBGEndColor 100%);
+	background: linear-gradient(top,@sapUshellShellHeadBGStartColor 0,@sapUiExtraLightBG 33%,@sapUiExtraLightBG 75%,@sapUshellShellHeadBGEndColor 100%);
+		
+	-webkit-box-shadow: inset 0 -0.0625em @sapUiMediumBG;
+	box-shadow: inset 0 -0.0625em @sapUiMediumBG;
+}
+
+.sapUshellShell.sapUshellShellCurtainVisible .sapUshellShellHead,
+.sapUshellShell.sapUshellShellCurtainVisible .sapUshellShellHead > div {
+	background: none;
+	background-color: @sapUiLightestBG;
+	filter: none;
+}
+
+.sapUshellShellCurtain {
+	border-bottom: 1px solid @sapUiMediumBG;
+	background-image: linear-gradient(to bottom, @sapUshellShellCurtainBGStartColor 0%, @sapUshellShellCurtainBGEndColor 100%);
+	background-image: -webkit-linear-gradient(top, @sapUshellShellCurtainBGStartColor 0%, @sapUshellShellCurtainBGEndColor 100%);
+	background-image: -ms-linear-gradient(top, @sapUshellShellCurtainBGStartColor 0%, @sapUshellShellCurtainBGEndColor 100%);
+	background-attachment: fixed;
+	background-repeat: repeat, no-repeat;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUshellShellCurtain,
+html[data-sap-ui-browser="ie9"] .sapUshellShellCurtain {
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorStr='@{sapUshellShellCurtainBGStartColor_IE}', EndColorStr='@{sapUshellShellCurtainBGEndColor_IE}',GradientType=0)";
+}
+/* END "ShellLayout.css" */
+
+/* START "ShellOverlay.css" */
+/* ============================================== */
+/* CSS for sap.ui.unfied.ShellOverlay.control (blue crystal)*/
+/* ============================================== */
+
+.sapUshellShellOvrlyBrand {
+	background-color: @sapUiBrand;
+}
+
+.sapUshellShellOvrlyCntnt {
+	background-color: @sapUiLightestBG;
+}
+
+.sapUshellShellOvrlyHeadCntnt {
+	background-color: @sapUiExtraLightBG;
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorStr='@{sapUshellShellHeadBGStartColor}', EndColorStr='@{sapUshellShellHeadBGEndColor}',GradientType=0)";
+	background: -ms-linear-gradient(top,@sapUshellShellHeadBGStartColor 0,@sapUiExtraLightBG 33%,@sapUiExtraLightBG 75%,@sapUshellShellHeadBGEndColor 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,@sapUshellShellHeadBGStartColor),color-stop(0.33,@sapUiExtraLightBG),color-stop(0.75,@sapUiExtraLightBG),color-stop(1,@sapUshellShellHeadBGEndColor));
+	background-image: -webkit-linear-gradient(top,@sapUshellShellHeadBGStartColor 0,@sapUiExtraLightBG 33%,@sapUiExtraLightBG 75%,@sapUshellShellHeadBGEndColor 100%);
+	background: linear-gradient(top,@sapUshellShellHeadBGStartColor 0,@sapUiExtraLightBG 33%,@sapUiExtraLightBG 75%,@sapUshellShellHeadBGEndColor 100%);
+		
+	-webkit-box-shadow: inset 0 -0.0625em @sapUiMediumBG;
+	box-shadow: inset 0 -0.0625em @sapUiMediumBG;
+}
+
+.sapUshellShellOvrlyHeadClose,
+.sapUshellShellOvrlyHeadClose:active,
+.sapUshellShellOvrlyHeadClose:hover,
+.sapUshellShellOvrlyHeadClose:focus,
+.sapUshellShellOvrlyHeadClose:visited {
+	color: @sapUiLightText;
+	text-shadow: 0 1px 0 fade(@sapUiWhite,50);
+}
+
+.sapUshellShellOvrlyHeadClose:active {
+	background-color: @sapUiHighlight;
+	color: @sapUiTextInverted;
+}
+
+.sapUshellShellOvrlyHeadClose {
+	right: 0;
+	height: @sapUshellShellHeaderBarHeight - 8px;
+	margin: 4px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sapUshellShellOvrlyHeadClose:before {
+	background-color: darken(@sapUiHeaderBG,10);
+    content: " ";
+    height: 76%;
+    top: 12%;
+    position: absolute;
+    left: -4px;
+    width: 1px;
+}
+
+.sapUiMedia-Std-Desktop .sapUshellShellOvrlyHeadClose:hover {
+	background-color: @sapUiBtnBGStandardHover;
+}
+
+.sapUiMedia-Std-Desktop .sapUshellShellOvrlyHeadClose:active:hover {
+	background-color: @sapUiHighlight;
+}
+/* END "ShellOverlay.css" */
+
+/* START "SplitContainer.css" */
+.sapUshellSpltContPane {
+	background-color: @sapUiLightestBG;
+}
+
+/* END "SplitContainer.css" */
+
+/* START "Tile.css" */
+
+/* ============================================= */
+/* CSS for control sap.ushell/Tile.control */
+/* ============================================= */
+
+/* LESS Variables */
+/* ============================================= */
+
+/* General Tile Colors */
+//[Tags "Color"]
+// [Description "Background color for tiles"]
+@sapUshellTileBackgroundColor:					@sapUiLightestBG;
+@ushellTileBackgroundColor:						@sapUiLightestBG;
+@ushellTileTextColor:							@sapUiHeaderText;
+
+/* Tile Border */
+@ushellTileBorderColor: 						@sapUiMediumBorder;
+
+/* Tile Shadow */
+@ushellTileShadowDimensions:					0px 0px @ushellTileShadowWidth;
+@ushellTileShadowColor:							fade(@sapUiShadowTint,10);
+
+/* Tile Footer (plus button in tile catalog) */
+@ushellTileFooterBorder:						@sapUiDarkBorder;
+@ushellTileFooterBackgroundColorInactive:		@sapUiButtonStandardBG; 
+@ushellTileFooterBackgroundColorHover:			darken(@sapUiButtonStandardBG, 5);
+@ushellTileFooterBackgroundColorActive:			@sapUiButtonStandardBG;
+@ushellTileFooterFontSize:						16px;
+@ushellTileFooterIconColor:						@sapUiLightText;
+@ushellTileFooterPosition:						relative;
+@ushellTileFooterPositionTop:					7px;
+@ushellTileFooterTextAlignment:					center;
+
+
+/* Styles */
+/* ============================================= */
+
+.sapUshellTile:hover .sapUshellTileInner {
+    box-shadow: 0px 0px 0px 2px @sapUshellTileBackgroundColor;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.sapUshellTile-clone {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.sapUshellTile {
+	background: @sapUshellTileBackgroundColor;
+	-moz-box-shadow: @ushellTileShadowDimensions @ushellTileShadowColor;
+	-webkit-box-shadow: @ushellTileShadowDimensions @ushellTileShadowColor;
+	box-shadow: @ushellTileShadowDimensions @ushellTileShadowColor;
+	border: @ushellTileBorderThickness solid @ushellTileBorderColor;
+	color: @ushellTileTextColor;
+
+	footer {
+
+		text-align: @ushellTileFooterTextAlignment;
+
+		& > * {
+			background: @ushellTileFooterBorder;
+
+			&.sapMBtnHover:not(.sapMBtnDisabled), &.sapMBtnActive:not(.sapMBtnDisabled) {
+				background-color: @ushellTileFooterBackgroundColorHover;
+			}
+            &.sapMBtn {
+                padding: 0;
+            }
+			.sapUiIcon {
+				line-height: @ushellTileFooterLineHeight;
+				font-size: @ushellTileFooterFontSize;
+				color: @ushellTileFooterIconColor;
+				position: @ushellTileFooterPosition;
+				top: @ushellTileFooterPositionTop;
+			}
+			
+			.sapMBtnInner{
+				height: 2rem;
+                border: none;
+                -moz-box-shadow: inset 0 2px 3px 0px rgba(0,0,0, 0.1);
+				-webkit-box-shadow: inset 0 2px 3px 0px rgba(0,0,0, 0.1);
+				box-shadow: inset 0 2px 3px 0px rgba(0,0,0, 0.1);
+			}
+
+			&.sapMBtnDisabled {
+				-webkit-transition: background-color 500ms ease; /* older webkit */
+				-webkit-transition: background-color 500ms ease; 
+				-moz-transition: background-color 500ms ease; 
+				-ms-transition: background-color 500ms ease; 
+				-o-transition: background-color 500ms ease; 
+				transition: background-color 500ms ease; /* custom */
+				background-color: @ushellTileFooterBackgroundColorActive;
+			}
+
+			&:first-child {
+				border-bottom-left-radius: @ushellTileFooterCornerRadius;
+			}
+			&:last-child {
+				border-bottom-right-radius: @ushellTileFooterCornerRadius;
+			}
+		}
+	}
+}
+
+.sapUshellTile:focus{
+  /*border: 0.125rem dotted rgb(0, 84, 131);*/
+    outline-color: rgb(0, 84, 131);
+    outline-style: dotted;
+    outline-width: 0.125rem;
+    outline-offset: 0rem;
+    top: 0.125rem;
+    left: 0.125rem;
+}
+
+#catalogTilesPage .sapUshellTile:focus{
+    position: relative;
+}
+
+/* END "Tile.css" */
+
+/* START "TileBase.css" */
+.sapUiMedia-Std-Desktop .sapUshellTileBase:focus{
+  outline-color: rgb(0, 84, 131);
+  outline-style: dotted;
+  outline-width: 0.125rem;
+  outline-offset: -0.125rem;
+}
+
+/* END "TileBase.css" */
+
+/* START "TileContainer.css" */
+/* ============================================= */
+/* CSS for control sap.ushell/TileContainer.control */
+/* ============================================= */
+
+/* LESS Variables */
+/* ============================================= */
+
+/* TileContainer Dashboard */
+	@ushellTileContainerDashboardGroupTitleFontFamily:						@sapUiFontHeaderFamily;
+	@ushellTileContainerDashboardGroupTitleFontWeight:						@sapUiFontHeaderWeight;
+	@ushellTileContainerDashboardGroupTitleColor:							@sapUiHeaderText;
+    @ushellTileContainerEditModeBGColor:                                    fade(@sapTextColor, 20); /*rgba(0,0,0,0.2)*/
+    @ushellTileContainerEditModeBGColorHover:                               fade(@sapTextColor, 20); /*rgba(0,0,0,0.4)*/
+    @ushellTileContainerHeaderActionsButtonHover:                           fade(@sapTextColor, 20);
+    @ushellTileContainerCloneColor:                                         fade(@sapTextColor, 40);
+    @ushellTileContainerPlaceholderColor:                                   @sapUiTextInverted;
+    @ushellTileContainerAddGroupText:                                       @sapUiTextInverted;
+    @sapUiExtraLightText:                                                   rgba(221, 221, 221, 1);
+
+	/* Desktop */
+		@ushellTileContainerDashboardGroupTitleFontSizeDesktop:			@sapMFontHeader2Size; /* TODO */
+	/* Phone */
+		@ushellTileContainerDashboardGroupTitleFontSizePhone:				@sapMFontHeader4Size; /* TODO */
+
+			
+/* TileContainer Catalog */
+	@ushellTileContainerCatalogGroupTitleFontFamily:						@sapUiFontFamily;
+	@ushellTileContainerCatalogGroupTitleFontWeight:						normal;
+	@ushellTileContainerCatalogGroupTitleBorderTop:                        solid 1px @sapUiDarkBorder;
+	
+	/* Desktop */
+		@ushellTileContainerCatalogGroupTitleFontSizeDesktop:				@sapMFontMediumSize; /* TODO */
+		@ushellTileContainerCatalogGroupTitleLineHeightDesktop:			1.4;
+		@ushellTileContainerCatalogGroupTitleBorderTopDesktop:			solid 1px @sapUiDarkBorder;
+
+	/* Phone */
+		@ushellTileContainerCatalogGroupTitleFontSizePhone:				@sapMFontMediumSize; /* TODO */
+		@ushellTileContainerCatalogGroupTitleLineHeightPhone:				1.4;
+		@ushellTileContainerCatalogGroupTitleBorderTopPhone:				solid 1px @sapUiDarkBorder;
+
+
+/* Styles */
+/* ============================================= */
+
+/*Circle div for dragging indicator*/
+.sapUshellCircle {
+    background-color: fade(@sapUiWhite, 40);
+    border-radius: 9px;
+}
+.sapUshellTileContainerLocked h2:after{
+    color: @sapUiTextInverted;
+}
+
+/* Only TileContainers located on the dashboard */
+.sapUshellDashboardGroupsContainer,#cloneArea {
+    .sapUshellContainerTitle{
+      font-family: @ushellTileContainerDashboardGroupTitleFontFamily;
+      font-weight: @ushellTileContainerDashboardGroupTitleFontWeight;
+    }
+}
+
+.sapUiMedia-Std-Desktop .sapUshellContainerTitle,
+.sapUiMedia-Std-Tablet .sapUshellContainerTitle
+{
+  font-size: @ushellTileContainerDashboardGroupTitleFontSizeDesktop;
+   font-weight: @ushellTileContainerDashboardGroupTitleFontWeight;
+
+}
+
+.sapUiMedia-Std-Phone .sapUshellContainerTitle
+{
+  font-size: @ushellTileContainerDashboardGroupTitleFontSizePhone;
+}
+
+.sapUshellDashboardGroupsContainer .tileContainerEditMode {
+
+      background: @ushellTileContainerEditModeBGColor;
+      border-radius: 2px;
+}
+
+/* Only TileContainers located on the catalog */
+.sapUshellCatalog {
+	
+	.sapUshellTileContainerContent{
+	
+		h3 {
+			font-family: @ushellTileContainerCatalogGroupTitleFontFamily;
+			font-weight: @ushellTileContainerCatalogGroupTitleFontWeight;
+		}
+	}
+}
+/*Tile Container in Edit Mode*/
+/*Add Group button*/
+.sapUshellTileContainer{
+    .sapUshellTileContainerBeforeContent , .sapUshellTileContainerAfterContent{
+        
+        .sapUshellAddGroupButton div{
+            color: @ushellTileContainerAddGroupText;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+            border: 1.125rem;
+
+            & > * {
+            font-size: 1.25rem;
+            color: @ushellTileContainerAddGroupText;
+            }
+        }
+    }
+}
+
+
+.sapMBtn.sapUshellAddGroupButton:hover>.sapMBtnInner:not(.sapMBtnActive){
+  background-color: @ushellTileContainerEditModeBGColorHover;
+}
+/*Tile Container Header Buttons*/
+.sapUshellTileContainerHeader {
+    .sapUshellHeaderActionButton div {
+
+             background-color: transparent;
+             color: white;
+             text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+        }
+}
+
+.sapMBtn.sapUshellHeaderActionButton:hover>.sapMBtnInner:not(.sapMBtnActive){
+    background-color: @ushellTileContainerHeaderActionsButtonHover;
+}
+
+.sapUshellHeaderActionButton .sapMBtnIcon {
+  color: #ffffff !important;
+}
+
+#dashboardGroups .sapUshellDashboardGroupsContainerItem-placeholder {
+    border: 2px dashed @ushellTileContainerPlaceholderColor;
+    background-color: transparent;
+    
+    .tileContainerEditMode {
+         background: transparent;
+    }
+}
+.sapUshellDashboardGroupsContainerItem.sapUshellDashboardGroupsContainerItem-clone {
+
+    .sapUshellContainerTitle {
+        background-color: @ushellTileContainerCloneColor;
+        font-weight: inherit;
+        cursor: -webkit-grabbing;
+
+    }
+}
+
+.sapUshellTileContainerHeader .sapUshellTileContainerTitleInput input{
+  background: rgba(255, 255, 255, 0.2);
+  color: @sapUiTextInverted;
+}
+
+.sapUiMedia-Std-Desktop .sapUshellTileContainerTitleInput ,
+.sapUiMedia-Std-Tablet .sapUshellTileContainerTitleInput  ,
+.sapUiMedia-Std-Phone .sapUshellTileContainerTitleInput {
+  ::-webkit-input-placeholder {
+    color: @sapUiExtraLightText;
+  }
+  :-moz-placeholder {
+    /* older Firefox*/
+    color: @sapUiExtraLightText;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: @sapUiExtraLightText;
+  }
+  :-ms-input-placeholder {
+    color: @sapUiExtraLightText;
+  }
+  label {
+    color: @sapUiExtraLightText;
+  }
+}
+/* END "TileContainer.css" */
+
+/* START "TileState.css" */
+
+/* ============================================= */
+/* CSS for control sap.ushell.ui.launchpad/TileState.control */
+/* ============================================= */
+
+.sapUshellGT {
+    display: inline-block;
+    overflow: hidden;
+    background: @sapUiWhite;
+    border-radius: 4px;
+    outline: none;
+}
+
+.sapUshellOverlay {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.sapUshellTileStateLoading {
+    height: 100%;
+}
+
+.sapUshellTileStateFtrFld {
+    left: 0.5rem;
+    bottom: 0.5rem;
+    display: table;
+    position: absolute;
+}
+
+.sapUshellTileStateFtrFldTxt {
+    font-weight: normal;
+    display:table-cell;
+    padding-left: 0.5rem;
+    vertical-align: bottom;
+}
+
+.sapUiMedia-Std-Phone .sapUshellTileStateFtrFldTxt {
+    padding-left: 0;
+}
+
+.sapUshellTileStateFtrFldIcn {
+    margin-right: 0.5rem;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.sapUshellTileStateFtrFldIcn>.sapUshellGTFtrFldIcnMrk {
+    vertical-align: bottom;
+} 
+
+/* END "TileState.css" */
+
+/* START "UserPreferencesButton.css" */
+.sapUshellUserPrefUserIdentifier {
+    border-bottom: 1px solid @sapUiLIBorder;
+    background-color: @sapUiListBG;
+}
+/* END "UserPreferencesButton.css" */
+

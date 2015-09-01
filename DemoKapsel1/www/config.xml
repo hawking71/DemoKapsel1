@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.sap.kapseldemo1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" defaultlocale="en-US">
+  <name>KapselDemo1</name>
+  <description/>
+  <author email="dev@sap.com" href="http://www.sap.com">SAP Product and Innovation</author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <vs:features />
+  <preference name="sap-development-version" value="1.0.0"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
+  <icon src="res/icon/icon_512.png"/>
+  <platform name="android">
+    <icon src="res/icon/icon_android_36.png" density="ldpi"/>
+    <icon src="res/icon/icon_android_48.png" density="mdpi"/>
+    <icon src="res/icon/icon_android_72.png" density="hdpi"/>
+    <icon src="res/icon/icon_android_96.png" density="xhdpi"/>
+    <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
+    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+    <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
+    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+    <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
+    <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+    <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
+    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+  </platform>
+  <platform name="ios">
+    <icon src="res/icon/icon_ios_57.png" width="57" height="57"/>
+    <icon src="res/icon/icon_ios_72.png" width="72" height="72"/>
+    <icon src="res/icon/icon_ios_114.png" width="114" height="114"/>
+    <icon src="res/icon/icon_ios_144.png" width="144" height="144"/>
+    <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
+    <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+    <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
+    <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
+    <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
+  </platform>
+  <platform name="android">
+    <preference name="Fullscreen" value="false"/>
+    <preference name="Orientation" value="default"/>
+    <preference name="ShowTitle" value="false"/>
+    <preference name="LogLevel" value="VERBOSE"/>
+  </platform>
+  <vs:plugin name="org.apache.cordova.camera" version="0.3.6" />
+</widget>
